@@ -142,35 +142,32 @@ def main():
         output_csv = test_data.to_csv(index=False)
         st.download_button(label="Download Predictions as CSV", data=output_csv, file_name='output.csv', mime='text/csv')
 
-footer=
-'''
-<style>
-a:link, a:visited {
-  color: lightgrey;
-  background-color: transparent;
-  text-decoration: none;
+footer= """<style>
+a:link , a:visited{
+color: lightgrey;
+background-color: transparent;
+text-decoration: none;
 }
 
-a:hover, a:active {
-  color: red;
-  background-color: transparent;
+a:hover,  a:active {
+color: red;
+background-color: transparent;
 }
 
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: transparent;
-  color: white;
-  text-align: center;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: transparent;
+color: white;
+text-align: center;
 }
 </style>
-
 <div class="footer">
-  <p>Developed with ❤ by <a style='display: block; text-align: center;' href="https://www.linkedin.com/in/krshnndu/" target="_blank">Krishnendu B</a></p>
+<p>Developed with ❤ by <a style='display: block; text-align: center;' href="https://www.linkedin.com/in/krshnndu/" target="_blank">Krishnendu B</a></p>
 </div>
-'''
+"""
 st.markdown(footer,unsafe_allow_html=True)
 
 if __name__ == '__main__':
